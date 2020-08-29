@@ -17,6 +17,8 @@ export class UserService {
 
   noAuthHeader = { headers: new HttpHeaders({ NoAuth: 'True' }) };
 
+  url = 'http://localhost:3000';
+
   constructor(private http: HttpClient) {}
 
   postUser(user: User) {
